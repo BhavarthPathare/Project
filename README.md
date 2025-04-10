@@ -82,6 +82,36 @@ An online pharmacy web application built using Java (JSP/Servlets) and MySQL, de
 
 ---
 
+## 📝 Python To-Do List Manager (Tkinter GUI)
+
+A simple desktop To-Do List application built with Python using the Tkinter GUI library. This app helps users keep track of daily tasks with a user-friendly interface.
+
+### 🔑 Features
+
+- ➕ Add tasks to your list
+- ❌ Delete completed or unwanted tasks
+- 📋 View all current tasks in a scrollable list
+- 🔚 Exit the application gracefully
+
+### 🛠️ Technologies Used
+
+- Python 3
+- Tkinter (Standard Python GUI library)
+
+### 🧠 Concepts Demonstrated
+
+- GUI design using `Tkinter`
+- Event-driven programming
+- Use of widgets like `Entry`, `Listbox`, `Button`, and `Frame`
+- Function binding for interactivity (`command=...`)
+- Main event loop with `root.mainloop()`
+
+### ▶️ How to Run
+
+1. Make sure Python is installed on your system.
+2. Run the script in your terminal or any Python IDE:
+   ```bash
+   python todo_list.py
 
 
 
