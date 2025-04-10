@@ -1,5 +1,5 @@
 ---
-# 📒 Address Book Organizer
+# 1. 📒 Address Book Organizer
 ---
 **Address Book Organizer** is a simple Java-based console application designed to help users manage and organize their contact information efficiently. It provides a menu-driven interface to add, view, and remove contacts with in-memory storage and input validation.
 
@@ -31,7 +31,7 @@
 
 ---
 
-# 💊 Online Medicine Shop (JSP + MySQL)
+# 2. 💊 Online Medicine Shop (JSP + MySQL)
 ---
 An online pharmacy web application built using Java (JSP/Servlets) and MySQL, developed in NetBeans. This project demonstrates the fundamentals of building a dynamic web application using Java EE technologies and serves as a learning tool for practicing Java-based web development.
 
@@ -83,7 +83,7 @@ An online pharmacy web application built using Java (JSP/Servlets) and MySQL, de
 
 ---
 
-## 📝 Python To-Do List Manager (Tkinter GUI)
+## 3. 📝 Python To-Do List Manager (Tkinter GUI)
 ---
 
 A simple desktop To-Do List application built with Python using the Tkinter GUI library. This app helps users keep track of daily tasks with a user-friendly interface.
