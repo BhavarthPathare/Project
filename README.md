@@ -27,7 +27,7 @@
 
 ### 🧪 Sample Menu
 
-![Image](https://github.com/user-attachments/assets/56e96b0d-2bb3-497b-a6b3-5c964f3b49de
+![Image](https://github.com/user-attachments/assets/56e96b0d-2bb3-497b-a6b3-5c964f3b49de)
 
 
 # 💊 Online Medicine Shop (JSP + MySQL)
