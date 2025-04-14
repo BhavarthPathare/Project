@@ -60,7 +60,6 @@ A web-based food ordering platform that allows users to browse restaurants, choo
 - Server: Apache / Nginx
 
 
-
 ---
 # 3. 💊 Online Medicine Shop (JSP + MySQL)
 ---
