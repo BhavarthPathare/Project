@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfume Cosmos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/perfume-cosmos/styles.css" />
+</head>
+<body>
+  <div id="app-root">
+    <header class="navbar">
+      <div class="nav-left">
+        <a class="brand" href="/perfume-cosmos/index.html">Perfume Cosmos</a>
+        <nav class="nav-links">
+          <a href="/perfume-cosmos/men.html">Men</a>
+          <a href="/perfume-cosmos/women.html">Women</a>
+          <a href="/perfume-cosmos/children.html">Children</a>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <a class="auth-link" href="/perfume-cosmos/login.html">Login</a>
+        <a class="auth-link" href="/perfume-cosmos/signup.html">Sign up</a>
+        <button id="cart-button" class="cart-button" aria-label="Open cart">
+          <span class="cart-icon">🛒</span>
+          <span id="cart-count" class="cart-count">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true">
+          <div class="starfield" id="starfield"></div>
+          <div class="parallax-layer layer-1"></div>
+          <div class="parallax-layer layer-2"></div>
+          <div class="parallax-layer layer-3"></div>
+        </div>
+        <div class="hero-content">
+          <h1 class="title">Discover your signature across the cosmos</h1>
+          <p class="subtitle">Astral elegance for men, luminous grace for women, playful stardust for children.</p>
+          <div class="cta-row">
+            <a class="btn primary" href="/perfume-cosmos/men.html">Explore Men</a>
+            <a class="btn light" href="/perfume-cosmos/women.html">Explore Women</a>
+            <a class="btn accent" href="/perfume-cosmos/children.html">Children</a>
+          </div>
+        </div>
+        <div class="floating-widgets">
+          <div class="widget orb" data-draggable>
+            <span>Oud Nebula</span>
+          </div>
+          <div class="widget chip" data-draggable>
+            <span>Rose Comet</span>
+          </div>
+          <div class="widget tag" data-draggable>
+            <span>Vanilla Star</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories">
+        <h2 class="section-title">Curated Collections</h2>
+        <div class="cards-grid">
+          <a class="category-card dark" href="/perfume-cosmos/men.html">
+            <div class="card-bg cosmic"></div>
+            <div class="card-content">
+              <h3>Men</h3>
+              <p>Bold, celestial, and refined aromas with astronomical aesthetics.</p>
+            </div>
+          </a>
+          <a class="category-card light" href="/perfume-cosmos/women.html">
+            <div class="card-bg luminous"></div>
+            <div class="card-content">
+              <h3>Women</h3>
+              <p>Light, airy palettes with radiant minimal design.</p>
+            </div>
+          </a>
+          <a class="category-card playful" href="/perfume-cosmos/children.html">
+            <div class="card-bg playful-bg"></div>
+            <div class="card-content">
+              <h3>Children</h3>
+              <p>Fun, soft scents with joyful motion and color.</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+      <div class="cart-header">
+        <h3>Your Cart</h3>
+        <button id="cart-close" class="icon-button" aria-label="Close cart">✕</button>
+      </div>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-footer">
+        <div class="cart-total-row">
+          <span>Total</span>
+          <span id="cart-total">$0.00</span>
+        </div>
+        <button id="checkout" class="btn primary block">Checkout</button>
+      </div>
+    </aside>
+
+    <div id="overlay" class="overlay" aria-hidden="true"></div>
+
+    <footer class="footer">
+      <p>Explore the cosmos • Discover the infinite • Wonder at the universe</p>
+    </footer>
+  </div>
+  <script src="/perfume-cosmos/app.js" defer></script>
+</body>
+</html>

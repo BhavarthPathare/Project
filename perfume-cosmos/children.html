@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" class="page-children">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Children • Perfume Cosmos</title>
+  <link rel="stylesheet" href="/perfume-cosmos/styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <a class="brand" href="/perfume-cosmos/index.html">Perfume Cosmos</a>
+      <nav class="nav-links">
+        <a href="/perfume-cosmos/men.html">Men</a>
+        <a href="/perfume-cosmos/women.html">Women</a>
+        <a href="/perfume-cosmos/children.html">Children</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <a class="auth-link" href="/perfume-cosmos/login.html">Login</a>
+      <a class="auth-link" href="/perfume-cosmos/signup.html">Sign up</a>
+      <button id="cart-button" class="cart-button" aria-label="Open cart">
+        <span class="cart-icon">🛒</span>
+        <span id="cart-count" class="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="min-height: 46vh;">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="starfield" id="starfield"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="title">Playful Scents for Children</h1>
+        <p class="subtitle">Soft, joyful fragrances with colorful motion.</p>
+      </div>
+      <div class="floating-widgets">
+        <div class="widget chip" data-draggable style="top:22%;left:18%"><span>Bubble Pop</span></div>
+        <div class="widget tag" data-draggable style="top:32%;right:12%"><span>Candy Cloud</span></div>
+      </div>
+    </section>
+
+    <section class="categories" style="padding-top: 24px;">
+      <h2 class="section-title">Featured Scents</h2>
+      <div class="cards-grid">
+        <div class="category-card playful" data-product data-id="c-01" data-name="Candy Cloud" data-price="59" data-image="https://picsum.photos/seed/candycloud/300/200">
+          <div class="card-bg playful-bg"></div>
+          <div class="card-content">
+            <h3>Candy Cloud</h3>
+            <p>Cotton-candy, pear, and fluffy vanilla.</p>
+            <button class="btn accent" data-add-to-cart>Add to cart</button>
+          </div>
+        </div>
+        <div class="category-card playful" data-product data-id="c-02" data-name="Bubble Pop" data-price="55" data-image="https://picsum.photos/seed/bubblepop/300/200">
+          <div class="card-bg playful-bg"></div>
+          <div class="card-content">
+            <h3>Bubble Pop</h3>
+            <p>Fizzy citrus and sweet apple.</p>
+            <button class="btn accent" data-add-to-cart>Add to cart</button>
+          </div>
+        </div>
+        <div class="category-card playful" data-product data-id="c-03" data-name="Rainbow Mist" data-price="62" data-image="https://picsum.photos/seed/rainbowmist/300/200">
+          <div class="card-bg playful-bg"></div>
+          <div class="card-content">
+            <h3>Rainbow Mist</h3>
+            <p>Soft floral breeze with melon.</p>
+            <button class="btn accent" data-add-to-cart>Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="cart-close" class="icon-button" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span id="cart-total">$0.00</span>
+      </div>
+      <button id="checkout" class="btn primary block">Checkout</button>
+    </div>
+  </aside>
+  <div id="overlay" class="overlay" aria-hidden="true"></div>
+
+  <footer class="footer">
+    <p>Explore the cosmos • Discover the infinite • Wonder at the universe</p>
+  </footer>
+
+  <script src="/perfume-cosmos/app.js" defer></script>
+</body>
+</html>

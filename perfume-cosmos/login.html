@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login • Perfume Cosmos</title>
+  <link rel="stylesheet" href="/perfume-cosmos/styles.css" />
+  <style>
+    .auth-wrapper { min-height: 100vh; display: grid; place-items: center; background: radial-gradient(900px 600px at 80% 10%, rgba(109,94,252,0.14), transparent 60%), radial-gradient(900px 600px at 20% 90%, rgba(0,225,255,0.12), transparent 60%); padding: 20px; }
+    .auth-card { width: min(480px, 95vw); background: rgba(14,19,34,0.7); border: 1px solid var(--border); border-radius: 16px; padding: 18px; backdrop-filter: blur(6px); box-shadow: 0 20px 60px rgba(0,0,0,0.25); transition: transform .25s ease; }
+    .auth-card:hover { transform: translateY(-2px); }
+    .auth-title { margin: 6px 0 14px; font-size: 28px; }
+    .field { display: grid; gap: 6px; margin: 10px 0; }
+    .input { background: var(--bg-panel); border: 1px solid var(--border); color: var(--text); border-radius: 10px; padding: 12px; }
+    .submit { margin-top: 12px; }
+    .auth-swap { color: var(--muted); font-size: 14px; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <a class="brand" href="/perfume-cosmos/index.html">Perfume Cosmos</a>
+      <nav class="nav-links">
+        <a href="/perfume-cosmos/men.html">Men</a>
+        <a href="/perfume-cosmos/women.html">Women</a>
+        <a href="/perfume-cosmos/children.html">Children</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="auth-wrapper">
+    <form class="auth-card" data-form="login">
+      <h1 class="auth-title">Welcome back</h1>
+      <div class="field">
+        <label>Email</label>
+        <input class="input" type="email" name="email" placeholder="you@cosmos.com" required />
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input class="input" type="password" name="password" placeholder="••••••••" required />
+      </div>
+      <div data-errors></div>
+      <button class="btn primary submit" type="submit">Login</button>
+      <p class="auth-swap">No account? <a href="/perfume-cosmos/signup.html">Sign up</a></p>
+    </form>
+  </main>
+
+  <script src="/perfume-cosmos/app.js" defer></script>
+</body>
+</html>
