@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" class="page-women">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Women • Perfume Cosmos</title>
+  <link rel="stylesheet" href="/perfume-cosmos/styles.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="nav-left">
+      <a class="brand" href="/perfume-cosmos/index.html">Perfume Cosmos</a>
+      <nav class="nav-links">
+        <a href="/perfume-cosmos/men.html">Men</a>
+        <a href="/perfume-cosmos/women.html">Women</a>
+        <a href="/perfume-cosmos/children.html">Children</a>
+      </nav>
+    </div>
+    <div class="nav-right">
+      <a class="auth-link" href="/perfume-cosmos/login.html">Login</a>
+      <a class="auth-link" href="/perfume-cosmos/signup.html">Sign up</a>
+      <button id="cart-button" class="cart-button" aria-label="Open cart">
+        <span class="cart-icon">🛒</span>
+        <span id="cart-count" class="cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" style="min-height: 46vh;">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="starfield" id="starfield"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="title" style="background: linear-gradient(90deg,#0b0e16,#505d90,#99a5ff);-webkit-background-clip:text;background-clip:text;color:transparent;">Luminous Collection for Women</h1>
+        <p class="subtitle" style="color:#333">Airy, radiant compositions on a soft light canvas.</p>
+      </div>
+    </section>
+
+    <section class="categories" style="padding-top: 24px;">
+      <h2 class="section-title" style="color:#0b0e16">Featured Scents</h2>
+      <div class="cards-grid">
+        <div class="category-card light" data-product data-id="w-01" data-name="Rose Comet" data-price="119" data-image="https://picsum.photos/seed/rosecomet/300/200">
+          <div class="card-bg luminous"></div>
+          <div class="card-content" style="color:#0b0e16">
+            <h3>Rose Comet</h3>
+            <p>Fresh rose, lychee, and pear in a comet tail.</p>
+            <button class="btn primary" data-add-to-cart>Add to cart</button>
+          </div>
+        </div>
+        <div class="category-card light" data-product data-id="w-02" data-name="Vanilla Star" data-price="99" data-image="https://picsum.photos/seed/vanillastar/300/200">
+          <div class="card-bg luminous"></div>
+          <div class="card-content" style="color:#0b0e16">
+            <h3>Vanilla Star</h3>
+            <p>Soft vanilla, jasmine, and a hint of musk.</p>
+            <button class="btn primary" data-add-to-cart>Add to cart</button>
+          </div>
+        </div>
+        <div class="category-card light" data-product data-id="w-03" data-name="Citrus Aurora" data-price="89" data-image="https://picsum.photos/seed/citrusaurora/300/200">
+          <div class="card-bg luminous"></div>
+          <div class="card-content" style="color:#0b0e16">
+            <h3>Citrus Aurora</h3>
+            <p>Radiant citrus with neroli and white musk.</p>
+            <button class="btn primary" data-add-to-cart>Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <aside id="cart-drawer" class="cart-drawer" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="cart-close" class="icon-button" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items"></div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span id="cart-total">$0.00</span>
+      </div>
+      <button id="checkout" class="btn primary block">Checkout</button>
+    </div>
+  </aside>
+  <div id="overlay" class="overlay" aria-hidden="true"></div>
+
+  <footer class="footer" style="background:#fff;border-top-color:#e6e9f3;color:#505d90">
+    <p>Explore the cosmos • Discover the infinite • Wonder at the universe</p>
+  </footer>
+
+  <script src="/perfume-cosmos/app.js" defer></script>
+</body>
+</html>
